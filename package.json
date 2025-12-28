@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matortheeternal/blog.git"
+  },
+  "author": "Mator",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "express": "^5.2.1",
+    "marked": "^17.0.1"
+  }
+}

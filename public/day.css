@@ -1,0 +1,9 @@
+body {
+    --var-page-background: #f7f7f7;
+    --var-text-color: #111;
+    --var-meta-color: #666;
+    --var-link-color: #06c;
+    --var-container-background: #fff;
+    --var-container-border-color: #e5e5e5;
+    --var-code-background: #f2f2f2;
+}
