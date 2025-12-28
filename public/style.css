@@ -144,6 +144,12 @@ article p {
     margin: 1rem 0;
 }
 
+article p:has(img) {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
 article ul,
 article ol {
     padding-left: 1.5rem;
@@ -179,6 +185,7 @@ article code {
 
 article img {
     max-width: 100%;
+    min-width: 0;
     height: auto;
     display: block;
     margin: 1.5rem auto;

@@ -63,8 +63,8 @@ function assignPrevNext(posts) {
     );
 
     posts.forEach((post, i) => {
-        post.prev = posts[i - 1];
-        post.next = posts[i + 1];
+        post.prev = posts[i + 1];
+        post.next = posts[i - 1];
     });
 }
 
