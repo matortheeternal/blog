@@ -8,11 +8,15 @@
   },
   "author": "Mator",
   "type": "module",
-  "main": "server.js",
+  "main": "scripts/server.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "node scripts/build.js",
+    "watch": "node scripts/watch.js",
+    "serve": "node scripts/server.js",
+    "dev": "concurrently -n WATCH,SERVER -c blue,green \"npm:watch\" \"npm:serve\""
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "express": "^5.2.1",
     "marked": "^17.0.1"
   }

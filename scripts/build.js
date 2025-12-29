@@ -8,8 +8,8 @@ import renderPost from './post.html.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const POSTS_DIR = path.join(__dirname, 'posts');
-const PUBLIC_DIR = path.join(__dirname, 'public');
+const POSTS_DIR = path.join(__dirname, '..', 'posts');
+const PUBLIC_DIR = path.join(__dirname, '..', 'public');
 const OUTPUT_POSTS_DIR = path.join(PUBLIC_DIR, 'posts');
 const POSTS_JSON_PATH = path.join(PUBLIC_DIR, 'posts.json');
 
@@ -87,7 +87,7 @@ function savePosts(posts) {
     fs.writeFileSync(POSTS_JSON_PATH, postsJson, 'utf8');
 }
 
-function build() {
+export default function build() {
     ensureDir(OUTPUT_POSTS_DIR);
 
     const files = fs.readdirSync(POSTS_DIR)
@@ -100,4 +100,6 @@ function build() {
     console.log(`Built ${posts.length} post(s).`);
 }
 
-build();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+    build()
+}
