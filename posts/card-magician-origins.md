@@ -29,7 +29,7 @@ submitting additional designs for the set:
 > likely to focus heavily on synchros
 
 Little did I know, this moment would kick off a sequence of events that would change 
-my life forever.
+my life forever. (queue the goofy soundtrack)
 
 ## In the beginning, there was Magic Set Editor
 One of the first questions I thought to ask was what people were using to make cards. 
